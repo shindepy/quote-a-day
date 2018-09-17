@@ -1,0 +1,13 @@
+<%- include( 'common/header', { cities: cities } ) %>
+
+<div class="container">
+    <h1><%= details.title %> : <%= details.heading %></h1>
+    <div class="row">
+    <% for( var i = 1; i <= details.numImages; i++ ) { %>
+        <div class="col-md-6">
+            <img src="/images/<%= city %>/<%= city %>-<%= i %>.jpg" class="img-responsive thumbnail" />
+        </div>
+    <% } %>
+</div>
+
+<%- include( 'common/footer' ) %>
